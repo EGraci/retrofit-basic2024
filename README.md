@@ -16,3 +16,11 @@
         android:allowBackup="true"
         ...
 ```
+
+## Setting local ip in file MainActivity.java
+```
+Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://your_ip/basic/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+```
